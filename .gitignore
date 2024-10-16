@@ -1,3 +1,5 @@
 *.exe
 .vscode
 demo.cpp
+main.cpp
+lab Test

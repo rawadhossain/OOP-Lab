@@ -114,30 +114,30 @@ void ShowAllAlphabetically(SavingsAccount ar[])
 
 double SavingsAccount::Interest = 0.0;
 
-int main()
-{
-    srand(time(0));
-    SavingsAccount acc[100];
+// int main()
+// {
+//     srand(time(0));
+//     SavingsAccount acc[100];
 
-    // editInformationByKeyboard(acc[0]);
-    // editInformationByKeyboard(acc[1]);
+//     // editInformationByKeyboard(acc[0]);
+//     // editInformationByKeyboard(acc[1]);
 
-    generateInformationRandom(acc[0]);
-    generateInformationRandom(acc[1]);
-    generateInformationRandom(acc[2]);
-    generateInformationRandom(acc[3]);
-    generateInformationRandom(acc[4]);
-    generateInformationRandom(acc[5]);
-    generateInformationRandom(acc[6]);
-    generateInformationRandom(acc[7]);
-    generateInformationRandom(acc[8]);
-    acc[1].setAnnualInterestRate(5.2);
-    // cout << acc[0].getAccountName() << endl << acc[0].getHolderName() << endl;
-    // cout << acc[0].getAddress() << endl << acc[0].getAnnualInterestRate() << endl << acc[0].getCurrentBalance() << endl;
+//     generateInformationRandom(acc[0]);
+//     generateInformationRandom(acc[1]);
+//     generateInformationRandom(acc[2]);
+//     generateInformationRandom(acc[3]);
+//     generateInformationRandom(acc[4]);
+//     generateInformationRandom(acc[5]);
+//     generateInformationRandom(acc[6]);
+//     generateInformationRandom(acc[7]);
+//     generateInformationRandom(acc[8]);
+//     acc[1].setAnnualInterestRate(5.2);
+//     // cout << acc[0].getAccountName() << endl << acc[0].getHolderName() << endl;
+//     // cout << acc[0].getAddress() << endl << acc[0].getAnnualInterestRate() << endl << acc[0].getCurrentBalance() << endl;
 
-    // ShowInterestAll(acc);
+//     // ShowInterestAll(acc);
 
-    ShowAllAlphabetically(acc);
+//     ShowAllAlphabetically(acc);
 
-    return 0;
-}
+//     return 0;
+// }
