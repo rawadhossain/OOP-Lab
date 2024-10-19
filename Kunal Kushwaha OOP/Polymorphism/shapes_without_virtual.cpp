@@ -4,11 +4,12 @@ using namespace std;
 class Shapes
 {
 public:
-    //  "virtual" allows the method to be overridden in derived classes, and when calling it on a base class pointer (Shapes*), the correct derived class's method will be invoked.
-    virtual void area()
+    // without using the virtual keyword in the base class, the base class's method will be called, even when you're calling the method on an object of the derived class through a base class pointer.
+    void area()
     {
         cout << "Im in shape" << endl;
     }
+    // Since the area() method in Shapes is not marked as virtual, C++ will use static binding, meaning the function call is resolved at compile time based on the type of the pointer (Shapes*), not the actual object it points to.
 };
 
 class Circle : public Shapes
@@ -46,8 +47,8 @@ int main()
     Shapes *square = new Square();
 
     // This will now call the overridden method in the Circle class
-    circle->area(); // Output: "Area is pi * r * r"
-    square->area(); // Output: "Area is square of side"
+    circle->area(); // Output: "Im in shape"
+    square->area(); // Output: "Im in shape"
 
     delete shape;
     delete circle;
