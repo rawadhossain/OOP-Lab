@@ -46,8 +46,10 @@ int main()
     BoxWeight bw2(3.0, 5.0);           // Cube constructor
     BoxWeight bw3(1.0, 2.0, 3.0, 4.0); // Full parameterized constructor
 
-    Box B;
+    Box B(1, 2, 3);
     cout << B.h << endl;
+
+    cout << B.getL() << endl;
 
     cout << bw3.weight << endl;
     BoxWeight bw4(bw3); // Copy constructor
