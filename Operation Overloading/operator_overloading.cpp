@@ -10,8 +10,8 @@ struct YouTubeChannel
 
     YouTubeChannel(string name, int subscribersCount)
     {
-        Name = name;
-        SubscribersCount = subscribersCount;
+        this->Name = name;
+        this->SubscribersCount = subscribersCount;
     }
 
     bool operator==(const YouTubeChannel &channel) const
