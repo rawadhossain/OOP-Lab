@@ -17,10 +17,10 @@ public:
 
     Point operator+(const Point &p)
     {
-        Point obj;
-        obj.x = x + p.x;
-        obj.y = y + p.y;
-        return obj;
+        // Point obj;
+        // obj.x = x + p.x;
+        // obj.y = y + p.y;
+        return Point(x + p.x, y + p.y);
     }
 
     Point operator-(const Point &p)
@@ -60,16 +60,16 @@ int main()
     Point p3 = p1 + p2;
     p3.display();
 
-    Point p4 = p1 - p2;
-    p4.display();
+    // Point p4 = p1 - p2;
+    // p4.display();
 
-    Point p5 = p1.add(p2);
-    p5.display();
+    // Point p5 = p1.add(p2);
+    // p5.display();
 
-    //(x + y) * (x - y)
+    // //(x + y) * (x - y)
 
-    Point p6 = (p1.add(p2)) * (p1.add(p2));
-    p6.display();
+    // Point p6 = (p1.add(p2)) * (p1.add(p2));
+    // p6.display();
 
     return 0;
 }
